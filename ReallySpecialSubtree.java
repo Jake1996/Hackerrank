@@ -10,7 +10,7 @@ public class ReallySpecialSubtree {
 
 	public static void main(String[] args) {
 		FastReader in = new FastReader();
-		int n = in.nextInt();
+		in.nextInt();
 		int m = in.nextInt();
 		int u,v,w;
 		Kruskal k = new Kruskal();
