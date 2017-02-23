@@ -3,8 +3,12 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.HashSet;
 import java.util.StringTokenizer;
-
-class q1 {
+/**
+ * https://www.hackerrank.com/contests/hourrank-17/challenges/gcd-matrix
+ * @author jake
+ *
+ */
+class GCDMatrix {
 	public static int a[] = new int[100000];
 	public static int b[] = new int[100000];
 	public static int arr[][] = new int[10000][10000];
