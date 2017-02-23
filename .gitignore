@@ -1,3 +1,4 @@
+*.class
 /AlgorithmicCrush$FastReader.class
 /AlgorithmicCrush$SegmentTreeMinimumRangeQuery.class
 /AlgorithmicCrush.class
