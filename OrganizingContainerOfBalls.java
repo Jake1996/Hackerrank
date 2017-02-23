@@ -1,17 +1,44 @@
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.Arrays;
 import java.util.StringTokenizer;
 
-class q4 {
+/**
+ * https://www.hackerrank.com/contests/hourrank-17/challenges/organizing-containers-of-balls
+ * @author jake
+ *
+ */
+class OrganizingContainerOfBalls {
 
 	public static void main(String[] args) {
 		FastReader in = new FastReader();
-		int n = in.nextInt();
-		while(n--!=0) {
-			
-		}
-		in.close();
+		int q = in.nextInt();
+	    while(q--!=0) {
+	      int n = in.nextInt();
+	      int arr[][] = new int[n][n];
+	      long[] sumc = new long[n];
+	      long[] sumr = new long[n];
+	      for(int i=0;i<n;i++)
+	        for(int j=0;j<n;j++)
+	        { 
+	        	 arr[i][j] = in.nextInt();
+	        	 sumr[i]+=arr[i][j];
+	        	 sumc[j]+=arr[i][j];
+	        }
+	      Arrays.sort(sumr);
+	      Arrays.sort(sumc);
+	      boolean flag = true;
+	      for(int i=0;i<n;i++)
+	      {
+	      	if(sumc[i]!=sumr[i])
+	      		{flag = false;break;}
+	      }
+	      
+	      if(flag) System.out.println("Possible");
+	      else System.out.println("Impossible");
+	    }
+	    in.close();
 	}
 	static class FastReader
     {
