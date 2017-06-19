@@ -1,6 +1,9 @@
 import java.util.ArrayList;
 import java.util.Scanner;
-
+/**
+ * @author Jake1996
+ * https://www.hackerrank.com/challenges/even-tree
+ */
 class EvenTree {
     public static int answer = 0;
     public static void main(String args[]) {

@@ -1,6 +1,6 @@
 # Hackerrank Solved Problems
 This repository contains some of the Hackerrank problems solved .
-##The .java files that contain the following header are working code :
+## The .java files that contain the following header are working code :
 ```
 /**
 * <A link to the problem on hackerrank>
